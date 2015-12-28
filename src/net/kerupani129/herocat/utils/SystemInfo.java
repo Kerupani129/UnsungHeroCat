@@ -36,16 +36,8 @@ public class SystemInfo {
 		Rectangle[] rects = new Rectangle[gds.length];
 
 		for (int i = 0; i < gds.length; i++) {
-			GraphicsConfiguration[] gcs = gds[i].getConfigurations();
-			Rectangle bounds = new Rectangle();
-			for (GraphicsConfiguration gc : gcs) {
-				if (bounds.isEmpty()) {
-					bounds.setBounds(gc.getBounds());
-				} else {
-					bounds = bounds.union(gc.getBounds());
-				}
-			}
-			rects[i] = bounds;
+			GraphicsConfiguration gc = gds[i].getDefaultConfiguration();
+			rects[i] = gc.getBounds();
 		}
 
 		return rects;
@@ -70,6 +62,7 @@ public class SystemInfo {
 			bounds.y += insets.top;
 			bounds.width -= insets.left + insets.right;
 			bounds.height -= insets.top + insets.bottom;
+
 			rects[i] = bounds;
 		}
 
