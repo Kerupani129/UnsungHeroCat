@@ -8,7 +8,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 
-import net.kerupani129.herocat.utils.SystemInfo;
+import net.kerupani129.herocat.util.SystemInfo;
 
 public class Main {
 

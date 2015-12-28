@@ -1,4 +1,4 @@
-package net.kerupani129.herocat.utils;
+package net.kerupani129.herocat.util;
 
 import java.awt.Dimension;
 import java.awt.GraphicsConfiguration;
