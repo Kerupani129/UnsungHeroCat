@@ -16,7 +16,3 @@ out
 # gradle
 build
 .gradle
-
-# other
-db
-damdb.jar
